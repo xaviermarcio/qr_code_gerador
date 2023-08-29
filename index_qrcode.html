@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gerador de QR Code com HTML, CSS e JavaScript">
     <meta name="keywords" content="Qrcode, JavaScript, CSS e HTML">
-    <title>Gerador de QrCode</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/qr_code.png">
+    
+    <title>QR Code - Gerador</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+      <div class="header-form">
+        <div class="header">
+            <h1>Gerador de Qrcode</h1>
+            <p>Cole a URL desejada:</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Insira a URL" name="" id="inputValue">
+            <button id="btnValue">Gerar QRcode</button>
+        </div>
+      </div>
+      <div class="qr-code">
+        <img src="img/qr-code_.png" id="imgQrCode">
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
