@@ -19,13 +19,23 @@
         </div>
         <div class="form">
             <input type="text" placeholder="Insira a URL" name="" id="inputValue">
-            <button id="btnValue">Gerar QRcode</button>
+            <div class="btn">
+                <button class="btn-buscar" id="btnValue">
+                    Gerar QRcode
+                </button>
+                <button class="btn-limpar" id="btnValueClear" onclick="clearForm()">
+                    Limpar QRcode
+                </button>
+            </div>
         </div>
+        
       </div>
       <div class="qr-code">
-        <img src="img/qr-code_.png" id="imgQrCode">
+        <img src="" id="imgQrCode" alt="">
       </div>
     </div>
+
+    
 
     <script src="js/script.js"></script>
 </body>

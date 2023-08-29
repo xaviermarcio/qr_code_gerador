@@ -17,3 +17,9 @@ btnValue.addEventListener('click', () => {
         btnValue.innerText = 'Gerar QRCode'
     })
 })
+
+function clearForm(){
+    // document.getElementById('inputValue').value='';
+    location.reload();
+    return false;
+}    
