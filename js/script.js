@@ -18,6 +18,17 @@ btnValue.addEventListener('click', () => {
     })
 })
 
+function verificaInput(){
+    let url = document.getElementById("inputValue").value;
+    
+    if(url == "" || url == null){
+        let span = document.getElementById("msgAlerta");
+        span.innerHTML = "O Campo não pode ser vazio*";
+        span.style.color = "red";
+    }else{
+        (url);
+    }
+}
 function clearForm(){
     // document.getElementById('inputValue').value='';
     location.reload();

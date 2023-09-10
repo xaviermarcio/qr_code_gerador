@@ -70,6 +70,14 @@ body{
     justify-content: center;
 }
 
+.wrapper .form span{
+    position: relative;
+    left: -155px;
+    top: -20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
 .wrapper .form input{
     background-color: transparent;
     width: 100%;
