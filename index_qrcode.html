@@ -11,31 +11,28 @@
     <title>QR Code - Gerador</title>
 </head>
 <body>
-    <div class="wrapper">
-      <div class="header-form">
-        <div class="header">
-            <h1>Gerador de Qrcode</h1>
-            <p>Cole a URL desejada:</p>
-        </div>
-        <div class="form">
-            <input type="text" placeholder="Insira a URL" name="" id="inputValue">
-            <div class="btn">
-                <button class="btn-buscar" id="btnValue">
-                    Gerar QRcode
-                </button>
-                <button class="btn-limpar" id="btnValueClear" onclick="clearForm()">
-                    Limpar QRcode
-                </button>
+    <div class="wrapper" id="main">
+        <div class="header-form">
+            <div class="header">
+                <h1>Gerador de Qrcode</h1>
+                <p>Cole a URL desejada:</p>
             </div>
+            <div class="form">
+                <input type="text" placeholder="Insira a URL" name="" id="inputValue">
+                <div class="btn">
+                    <button class="btn-buscar" id="btnValue">
+                        Gerar QRcode
+                    </button>
+                    <button class="btn-limpar" id="btnValueClear" onclick="clearForm()">
+                        Limpar QRcode
+                    </button>
+                </div>
+            </div>
+        </div>    
+        <div class="qr-code">
+            <img src="" id="imgQrCode" alt="">
         </div>
-        
-      </div>
-      <div class="qr-code">
-        <img src="" id="imgQrCode" alt="">
-      </div>
     </div>
-
-    
 
     <script src="js/script.js"></script>
 </body>
