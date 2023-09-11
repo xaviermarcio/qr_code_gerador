@@ -4,8 +4,6 @@ const imgQrCode = document.querySelector('#imgQrCode');
 const wrapper = document.querySelector('.wrapper');
 let valueDefault;
 
-
-
 btnValue.addEventListener('click', () => {
     let qrcodeValue = inputValue.value.trim();  
     if(!qrcodeValue || qrcodeValue === valueDefault) return;
@@ -18,6 +16,12 @@ btnValue.addEventListener('click', () => {
     })
 })
 
+form.addEventListener("submit", (e) =>{
+    e.preventDefault();
+
+    verificaInput();
+});
+
 function verificaInput(){
     let url = document.getElementById("inputValue").value;
     
@@ -26,7 +30,8 @@ function verificaInput(){
         span.innerHTML = "O Campo não pode ser vazio*";
         span.style.color = "red";
     }else{
-        (url);
+        let span = document.getElementById("msgAlerta");
+        span.hidden = true;
     }
 }
 function clearForm(){

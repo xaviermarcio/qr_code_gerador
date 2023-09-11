@@ -17,8 +17,8 @@
             <h1>Gerador de Qrcode</h1>
             <p>Cole a URL desejada:</p>
         </div>
-        <div class="form">
-            <input type="text" placeholder="Insira a URL" name="" id="inputValue">
+        <div class="form" id="form">
+            <input type="text" placeholder="Insira a URL" name="" id="inputValue" oninput="verificaInput()">
             <span id="msgAlerta"></span>
             <div class="btn">
                 <button class="btn-buscar" id="btnValue" onclick="verificaInput()">
@@ -35,8 +35,6 @@
         <img src="" id="imgQrCode" alt="">
       </div>
     </div>
-
-    
 
     <script src="js/script.js"></script>
 </body>
