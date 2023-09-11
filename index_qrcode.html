@@ -11,31 +11,44 @@
     <title>QR Code - Gerador</title>
 </head>
 <body>
-    <div class="wrapper">
-      <div class="header-form">
-        <div class="header">
-            <h1>Gerador de Qrcode</h1>
-            <p>Cole a URL desejada:</p>
-        </div>
-        <div class="form" id="form">
-            <input type="text" placeholder="Insira a URL" name="" id="inputValue" oninput="verificaInput()">
-            <span id="msgAlerta"></span>
-            <div class="btn">
-                <button class="btn-buscar" id="btnValue" onclick="verificaInput()">
-                    Gerar QRcode
-                </button>
-                <button class="btn-limpar" id="btnValueClear" onclick="clearForm()">
-                    Limpar QRcode
-                </button>
+    <div class="flip">Clique aqui para usar o Gerador de QRcode</div>
+    <div class="painel">
+        <div class="wrapper">
+            <div class="header-form">
+              <div class="header">
+                  <h1>Gerador de Qrcode</h1>
+                  <p>Cole a URL desejada:</p>
+              </div>
+              <div class="form" id="form">
+                  <input type="text" placeholder="Insira a URL" name="" id="inputValue" oninput="verificaInput()">
+                  <span id="msgAlerta"></span>
+                  <div class="btn">
+                      <button class="btn-buscar" id="btnValue" onclick="verificaInput()">
+                          Gerar QRcode
+                      </button>
+                      <button class="btn-limpar" id="btnValueClear" onclick="clearForm()">
+                          Limpar QRcode
+                      </button>
+                  </div>
+              </div>
+              
             </div>
-        </div>
-        
-      </div>
-      <div class="qr-code">
-        <img src="" id="imgQrCode" alt="">
-      </div>
+            <div class="qr-code">
+              <img src="" id="imgQrCode" alt="">
+            </div>
+          </div>
+
     </div>
+  
 
     <script src="js/script.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('.flip').click(function (){
+                $('.painel').toggle('slow');
+            });
+        });
+    </script>
 </body>
 </html>
