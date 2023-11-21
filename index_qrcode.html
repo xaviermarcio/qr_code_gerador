@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="img/qr_code.png">
     
     <title>QR Code - Gerador</title>
+    
 </head>
 <body>
     <div class="flip">Clique aqui para usar o Gerador de QRcode</div>
@@ -40,13 +41,13 @@
 
     <script src="js/script.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
-    
     <script>
         $(document).ready(function (){
             $('.flip').click(function (){
+                $(this).toggle('slow'); 
                 $('.painel').toggle('slow');
             });
         });
     </script>
-</body>
+</body>  
 </html>
