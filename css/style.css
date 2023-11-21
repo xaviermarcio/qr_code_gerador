@@ -37,6 +37,7 @@ body{
    text-align: center;
    background-color: var(--color-blue);
    color: var(--color-white);
+   cursor: pointer;
 }
 
 .painel{
